@@ -29,12 +29,10 @@
     <!--Custom CSS file-->
     <link rel="stylesheet" href="style.css">
 
-
-    <!--Slide photo test section of head-->
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-
-    <!--!Slide photo test section of head-->
-
+    <?php
+        // require functions.php file
+        require('functions.php');
+    ?>
 
 </head>
 
