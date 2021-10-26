@@ -95,7 +95,6 @@
 
 </header>
 <!--!start #header-->
-<!--test-->
 <!--start #main-site-->
 <main id="main-site">
     <!--Owl-carousel-->
@@ -112,21 +111,6 @@
             </div>
         </div>
 
-        <!--Slide photo test section of body // failed attemps
-      <div class="slide-frame">
-        <div class="slide-image">
-          <div class="img-container">
-            <img src="./assets/Banner2.png">
-          </div>
-          <div class="img-container">
-            <img src="./assets/Banner1.png">
-          </div>
-          <div class="img-container">
-            <img src="./assets/Banner1.png">
-          </div>
-        </div>
-      </div>
-      -->
 
 
 
