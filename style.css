@@ -35,7 +35,7 @@ button, button:focus {
     font-size: 20px;
 }
 
-/*color template */
+/* Color Template  */
 .color-primary {
     color: #003859;
 }
@@ -45,19 +45,19 @@ button, button:focus {
 }
 
 .color-second {
-    color: #00a5c4;
+    color: #00A5C4;
 }
 
 .color-second-bg {
-    background: #00a5c4;
+    background: #00A5C4;
 }
 
 .color-yellow {
-    color: #ffd289;
+    color: #FFD289;
 }
 
 .color-yellow-bg {
-    background: #ffd289;
+    background: #FFD289;
 }
 
 /*top sale template */
@@ -78,9 +78,10 @@ button, button:focus {
 #top-sale .owl-carousel .owl-nav button.owl-prev {
     left: 0;
 }
-#top-sale .owl-carousel .owl-nav button.owl-prev span .owl-carousel .owl-nav button.owl-next span {
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
     font-size: 35px;
-    color: darkblue;
+    color: #003859;
     padding: 0 1rem;
 }
 #top-sale .owl-carousel .owl-nav button.owl-prev span {
@@ -93,7 +94,8 @@ button, button:focus {
     margin-right: -4rem;
 }
 
-#spcial-price .grid .grid-item {
+/*   Special Price Section Template */
+#special-price .grid .grid-item {
     margin-right: 1.2rem;
     margin-top: 1rem;
 }

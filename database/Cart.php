@@ -13,13 +13,13 @@ class Cart
 
     // insert into cart table
     public function insertIntoCart($params = null, $table = "cart"){
-        if ($this->db->con != null) {
-            if ($params != null) {
+        if ($this->db->con != null){
+            if ($params != null){
                 // "Insert into cart(user_id) values (0)"
                 // get table columns
                 $columns = implode(',', array_keys($params));
 
-                $values = implode(',', array_values($params));
+                $values = implode(',' , array_values($params));
 
                 //create sql query
                 $query_string = sprintf("INSERT INTO %s(%s) VALUES(%s)", $table, $columns, $values);
@@ -77,6 +77,22 @@ class Cart
                 return $value[$key];
             }, $cartArray);
             return $cart_id;
+        }
+    }
+
+    // Save for later
+    public function saveForLater($item_id = null, $saveTable = "wishlist", $fromTable = "cart"){
+        if ($item_id != null){
+            $query = "INSERT INTO {$saveTable} SELECT * FROM {$fromTable} WHERE item_id={$item_id};";
+            $query .= "DELETE FROM {$fromTable} WHERE item_id={$item_id};";
+
+            // execute multiple query
+            $result = $this->db->con->multi_query($query);
+
+            if($result){
+                header("Location :" . $_SERVER['PHP_SELF']);
+            }
+            return $result;
         }
     }
 
